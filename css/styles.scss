@@ -1,0 +1,21 @@
+@import "./components/header";
+@import './components/banner';
+@import "./components/services";
+@import "./components/features";
+@import "./components/testimonial";
+@import "./components/ourTeam";
+@import "./components/subscribe";
+@import './components/footer';
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}

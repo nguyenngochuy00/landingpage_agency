@@ -1,0 +1,77 @@
+@import '../base/mixin';
+
+.testimonial {
+    padding: 0 235px;
+
+    &-component {
+        @include services-component;
+        padding-top: 146.01px;
+    }
+
+    &-title {
+        @include service-title;
+    }
+
+    &-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding-top: 101px;
+
+        &-member1,
+        &-member2,
+        &-member3,
+        &-member4 {
+            display: flex;
+            column-gap: 30px;
+
+            &-img {
+                border-radius: 10px;
+                width: 70px;
+                height: 70px;
+                margin: 36px 0 131px 35px;
+            }
+
+            &-content {
+                padding: 35px 28px 23px 0;
+
+                &-opinion {
+                    color: #0b1b35;
+                    font-family: "DM Sans", sans-serif;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 28px;
+                }
+
+                &-name {
+                    color: #0b1b35;
+                    font-family: "DM Sans", sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 26px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    opacity: 0.3;
+                }
+            }
+        }
+
+        &-member1-content-opinion {
+            padding-bottom: 13px;
+        }
+
+        &-member2-content-opinion {
+            padding-bottom: 41px;
+        }
+
+        &-member3-content-opinion {
+            padding-bottom: 97px;
+        }
+
+        &-member4-content-opinion {
+            padding-bottom: 69px;
+        }
+    }
+}

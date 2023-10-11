@@ -1,0 +1,54 @@
+@import '../base/mixin';
+
+.footer {
+    padding: 167px 135px 41px;
+
+    &-top {
+        display: flex;
+        align-items: center;
+
+        &-logo {
+            padding-right: 90px;
+        }
+
+        &-copyright {
+            padding-right: 220px;
+            // width: 369px;
+            color: #1e0e62;
+            @include features-content-description;
+        }
+
+        &-link {
+            a {
+                text-decoration: none;
+                color: #1e0e62;
+                @include features-content-description;
+            }
+
+            &-portfolio,
+            &-work {
+                padding-right: 39px;
+            }
+
+            &-price {
+                padding-right: 42px;
+            }
+
+            &-about {
+                padding-right: 41px;
+            }
+        }
+    }
+
+    hr {
+        stroke-width: 2px;
+        stroke: #ebeaed;
+        opacity: 0.5;
+        margin: 31px 0 40px;
+    }
+
+    &-bottom {
+        color: rgba(21, 20, 57, 0.4);
+        @include features-content-description;
+    }
+}

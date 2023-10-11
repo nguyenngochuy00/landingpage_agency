@@ -1,0 +1,68 @@
+@import '../base/mixin';
+
+.features {
+    display: flex;
+    padding: 0 135px;
+    margin-top: 181.01px;
+
+    &-content {
+        margin-top: 17.13px;
+
+        &-title {
+            color: #1e0e62;
+            font-family: "DM Sans", sans-serif;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+            padding-right: 178.52px;
+        }
+
+        &-description {
+            padding: 20.51px 159.22px 0 0;
+            color: rgba(21, 20, 57, 0.4);
+            @include features-content-description;
+        }
+
+        &-btn {
+            margin: 72.13px 349.79px 0 0;
+            padding: 13px 38px;
+            color: #1e0e62;
+            text-align: center;
+            font-family: "DM Sans", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22px;
+            border-radius: 100px;
+            border: 2px solid #ebeaed;
+            background-color: white;
+        }
+    }
+
+    &-video {
+        position: relative;
+
+        &-img {
+            border-radius: 10px;
+            // background-image: url('images/Masked.png');
+            background-size: cover;
+            // width: 687.526px;
+            // height: 445.979px;
+        }
+
+        &-btnPlay {
+            width: 84.433px;
+            height: 84.433px;
+            border-radius: 100px;
+            background: #482be7;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

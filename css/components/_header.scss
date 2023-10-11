@@ -1,0 +1,51 @@
+@import '../base/mixin';
+
+.header {
+    display: flex;
+    padding: 48px 135px 0;
+
+    &-logo {
+        padding-right: 114px;
+    }
+
+    &-link {
+        display: flex;
+        align-items: center;
+        padding-right: 250px;
+        column-gap: 40px;
+
+        &-home,
+        &-about,
+        &-app,
+        &-contacts {
+            text-decoration: none;
+            color: #000;
+            @include header-link-home;
+        }
+
+        &-home {
+            font-weight: 700;
+        }
+    }
+
+    &-button {
+        display: flex;
+        align-items: center;
+        column-gap: 22px;
+
+        &-logIn,
+        &-signUp {
+            @include header-link-home;
+        }
+
+        &-logIn {
+            text-decoration: none;
+            color: #000;
+        }
+
+        &-signUp {
+            padding: 10px 30px;
+            @include header-button-signUp;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+@import '../base/mixin';
+
+.ourTeam {
+    padding: 0 135px;
+
+    &-component {
+        padding-top: 142px;
+        @include services-component;
+    }
+
+    &-title {
+        @include service-title;
+    }
+
+    &-profile {
+        display: flex;
+        column-gap: 30px;
+
+        &-member1,
+        &-member2,
+        &-member3 {
+            width: 370px;
+            height: 370px;
+            border: solid 2px #ebeaed;
+            border-radius: 10px;
+            margin-top: 53px;
+
+            &-img {
+                padding: 50px 125px 0 !important;
+            }
+
+            &-name {
+                color: #1e0e62;
+                text-align: center;
+                font-family: "DM Sans", sans-serif;
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 32px;
+            }
+
+            &-job {
+                color: rgba(21, 20, 57, 0.4);
+                text-align: center;
+                font-family: "DM Sans", sans-serif;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 26px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+
+            &-social {
+                padding-top: 35px;
+                display: flex;
+
+                &-twitter,
+                &-facebook,
+                &-dribble {
+                    text-decoration: none;
+                    color: rgba(21, 20, 57, 0.4);
+                    text-align: center;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 38px;
+                }
+
+                &-twitter {
+                    padding: 16.8px 47.5px 3.2px 55px;
+                    border-top: 2px solid #EBEAED;
+                    border-right: 2px solid #EBEAED;
+                }
+
+                &-facebook {
+                    padding: 16.8px 51.5px 3.2px 50.5px;
+                    border-top: 2px solid #EBEAED;
+                    border-right: 2px solid #EBEAED;
+                }
+
+                &-dribble {
+                    padding: 16.8px 51.5px 3.2px 45.5px;
+                    border-top: 2px solid #EBEAED;
+                }
+            }
+        }
+
+        &-member1-name {
+            padding: 28.8px 111px 0 114px;
+        }
+
+        &-member2-name {
+            padding: 28.8px 96px 0 99px;
+        }
+
+        &-member3-name {
+            padding: 28.8px 131px 0 134px;
+        }
+
+        &-member1,
+        &-member2 {
+            &-job {
+                padding: 13px 131px 0 132px;
+            }
+        }
+
+        &-member3-job {
+            padding: 13px 110px 0 111px;
+        }
+    }
+}
