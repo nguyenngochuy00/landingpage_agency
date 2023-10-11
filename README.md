@@ -1,0 +1,6 @@
+- Design from figma: https://www.figma.com/file/cq0FtgtyhP2zBuv2KkyM9h/Agency-Landing-Page-(Community)?node-id=59%3A68&mode=dev
+- Dimensions from figma: 1440px
+- Link github: https://github.com/nguyenngochuy00/landingpage_agency
+- Link web: https://landingpage-agency.netlify.app/
+- Technology used: HTML, CSS/SCSS
+- Library: Fontawesome
